@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FloraVision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">
+    <img src="img/ChatGPT Image May 9, 2026, 02_51_06 AM.png" height="30px" width="30px" >
+    FloraVision.
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li class="has-dd">
+      <a href="#trending">Plants Type <span class="dd-arrow">▾</span></a>
+      <ul class="dd-menu">
+        <li><a href="#">Indoor Plants</a></li>
+        <li><a href="#">Outdoor Plants</a></li>
+        <li><a href="#">Succulents</a></li>
+        <li><a href="#">Air Purifiers</a></li>
+      </ul>
+    </li>
+    <li><a href="#o2">More</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+  <div class="nav-icons">
+    <button class="ni-btn" aria-label="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="ni-btn" aria-label="cart">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile -->
+<div class="mob-bg" id="mobBg"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose">✕</button>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#trending">Plants Type</a></li>
+    <li><a href="#o2">More</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="home">
+  <!-- Full page bg: lush green leaves -->
+  <div class="hero-bg"></div>
+  <!-- Dark green gradient overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Left content -->
+  <div class="hero-content">
+    <h1 class="hero-title">Earth's Exhale</h1>
+    <p class="hero-quote">"Earth Exhale" symbolises the purity and vitality of the Earth's natural environment and its essential role in sustaining life.</p>
+    <div class="hero-actions">
+      <button class="btn-buynow">Buy Now</button>
+      <button class="btn-demo">
+        <span class="play-btn">
+          <svg width="9" height="10" viewBox="0 0 9 10" fill="white"><path d="M1 1l7 4-7 4V1z"/></svg>
+        </span>
+        Get Demo
+      </button>
+    </div>
+    <!-- Reviewer -->
+    <div class="reviewer">
+      <img src="https://i.pravatar.cc/38?img=12" class="rv-pic" alt="reviewer"/>
+      <div>
+        <div class="rv-name">Ronnie Hamdi</div>
+        <div class="rv-stars">★★★★☆</div>
+        <div class="rv-text">I can't express how thrilled I am with my new nature plants! They bring such a fresh and vibrant energy to my home.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Floating product card -->
+  <div class="hero-pcard">
+    <!-- Plant photo area -->
+    <div class="hpc-photo-area">
+      <img src="img/ChatGPT Image May 7, 2026, 01_43_55 PM.png" class="hpc-photo" alt="plant" id="hpcPhoto"/>
+      <!-- Avatar stack top-left of card -->
+      <div class="hpc-avatars">
+        <img src="https://i.pravatar.cc/26?img=5" class="hpc-av"/>
+        <img src="https://i.pravatar.cc/26?img=8" class="hpc-av"/>
+        <div class="hpc-av hpc-s">S</div>
+      </div>
+    </div>
+    <div class="hpc-body">
+      <div class="hpc-label" id="hpcLabel">Indoor Plant</div>
+      <div class="hpc-name" id="hpcName">Aglaonema plant</div>
+      <button class="btn-buynow hpc-buybtn">Buy Now</button>
+      <div class="hpc-dots">
+        <span class="hpc-dot active"></span>
+        <span class="hpc-dot"></span>
+        <span class="hpc-dot"></span>
+      </div>
+    </div>
+    <button class="hpc-arrow" id="hpcArrow">›</button>
+  </div>
+
+  <!-- "Our Trendy Plants" label -->
+  <div class="trendy-hero-label">
+    <span>Our Trendy plants</span>
+  </div>
+</section>
+
+<!-- ══════════ TRENDY PLANTS ══════════ -->
+<!-- This section sits ON the same bg, with glass cards -->
+<section class="trendy" id="trending">
+  <!-- Same bg continues -->
+  <div class="trendy-bg"></div>
+  <div class="trendy-overlay"></div>
+
+  <div class="trendy-inner">
+
+    <!-- Card 1: plant left, text right -->
+    <div class="tc tc-1">
+      <div class="tc-plant">
+        <!-- Plant image floats with NO box -->
+        <img
+          src="img/ChatGPT Image May 7, 2026, 02_20_25 PM.png"
+          class="tc-plant-img"
+          alt="desk plant"
+        />
+      </div>
+      <div class="tc-info">
+        <h3 class="tc-h3">For Your Desks Decorations</h3>
+        <p class="tc-p">I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!</p>
+        <div class="tc-price">Rs. 599/-</div>
+        <div class="tc-btns">
+          <button class="btn-explore">Explore</button>
+          <button class="btn-cart-sq" onclick="addCart(this)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: text left, plant right -->
+    <div class="tc tc-2">
+      <div class="tc-info">
+        <h3 class="tc-h3">For Your Desks Decorations</h3>
+        <p class="tc-p">The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming.</p>
+        <div class="tc-price">Rs. 399/-</div>
+        <div class="tc-btns">
+          <button class="btn-explore">Explore</button>
+          <button class="btn-cart-sq" onclick="addCart(this)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="tc-plant tc-plant-right">
+        <img
+          src="img/ChatGPT Image May 7, 2026, 02_25_40 PM.png"
+          class="tc-plant-img"
+          alt="succulent"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ TOP SELLING ══════════ -->
+<section class="selling" id="selling">
+  <h2 class="sec-head"><span>Our Top Selling Plants</span></h2>
+  <div class="sell-grid">
+
+    <div class="sell-card">
+      <div class="sell-img-wrap">
+        <img src="img/ChatGPT Image May 7, 2026, 01_43_55 PM.png" alt="Aglaonema"/>
+      </div>
+      <div class="sell-info">
+        <h4>Aglaonema plant</h4>
+        <p>The Aglaonema plant, commonly known as Chinese Evergreen, known for its attractive foliage and ease of care.</p>
+        <div class="sell-row">
+          <span class="sell-price">Rs. 300/-</span>
+          <button class="sell-cart-btn" onclick="addCart(this)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sell-card sell-featured">
+      <div class="sell-pill">
+        <img src="https://i.pravatar.cc/20?img=3" class="sp-img"/>
+        <img src="https://i.pravatar.cc/20?img=7" class="sp-img"/>
+        <span class="sp-n">N</span>
+      </div>
+      <div class="sell-img-wrap">
+        <img src="img/ChatGPT Image May 7, 2026, 02_20_25 PM.png" alt="Plantain Lilies"/>
+      </div>
+      <div class="sell-info">
+        <h4>Plantain Lilies</h4>
+        <p>Hostas are primarily grown for their lush, decorative leaves, which come in a wide variety of shapes, sizes.</p>
+        <div class="sell-row">
+          <span class="sell-price">Rs. 380/-</span>
+          <button class="sell-cart-btn" onclick="addCart(this)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sell-card">
+      <div class="sell-img-wrap">
+        <img src="img/ChatGPT Image May 7, 2026, 02_16_53 PM.png" alt="Cactus"/>
+      </div>
+      <div class="sell-info">
+        <h4>Cactus</h4>
+        <p>It is known for their ability to thrive in arid environments.</p>
+        <div class="sell-row">
+          <span class="sell-price">Rs. 259/-</span>
+          <button class="sell-cart-btn" onclick="addCart(this)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sell-card">
+      <div class="sell-img-wrap">
+        <img src="img/ChatGPT Image May 7, 2026, 02_04_30 PM.png" alt="Swiss Cheese"/>
+      </div>
+      <div class="sell-info">
+        <h4>Swiss cheese Plant</h4>
+        <p>It is a popular tropical houseplant admired for its distinctive, perforated leaves.</p>
+        <div class="sell-row">
+          <span class="sell-price">Rs. 400/-</span>
+          <button class="sell-cart-btn" onclick="addCart(this)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sell-card">
+      <div class="sell-img-wrap">
+        <img src="img/ChatGPT Image May 7, 2026, 02_08_40 PM.png" alt="Sansevieria"/>
+      </div>
+      <div class="sell-info">
+        <h4>Sansevieria plant</h4>
+        <p>It is a popular indoor plant admired for its striking appearance and low-maintenance nature.</p>
+        <div class="sell-row">
+          <span class="sell-price">Rs. 450/-</span>
+          <button class="sell-cart-btn" onclick="addCart(this)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sell-card">
+      <div class="sell-img-wrap">
+        <img src="img/ChatGPT Image May 7, 2026, 02_12_33 PM.png" alt="Agave"/>
+      </div>
+      <div class="sell-info">
+        <h4>Agave plant</h4>
+        <p>The Agave plant is a genus of succulent plants known for their striking rosette of thick, fleshy leaves.</p>
+        <div class="sell-row">
+          <span class="sell-price">Rs. 359/-</span>
+          <button class="sell-cart-btn" onclick="addCart(this)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ CUSTOMER REVIEW ══════════ -->
+<section class="reviews" id="reviews">
+  <h2 class="sec-head"><span>Customer Review</span></h2>
+  <div class="fp-badge">
+    <img src="https://i.pravatar.cc/26?img=2" class="fpb-av"/>
+    <span class="fpb-i">i</span>
+    <span>2</span>
+  </div>
+  <div class="rv-grid">
+
+    <div class="rv-card">
+      <div class="rv-top">
+        <img src="https://i.pravatar.cc/38?img=9" class="rv-av"/>
+        <div>
+          <div class="rv-name">Shelly Ru...</div>
+          <div class="rv-stars">★★★★☆</div>
+        </div>
+      </div>
+      <p>Just got my hands on some absolutely awesome plants, and I couldn't be happier!</p>
+    </div>
+
+    <div class="rv-card rv-center">
+      <img src="https://i.pravatar.cc/64?img=20" class="rv-big-av"/>
+      <div class="rv-top">
+        <img src="https://i.pravatar.cc/38?img=20" class="rv-av"/>
+        <div>
+          <div class="rv-name">Lula Rolfson</div>
+          <div class="rv-stars">★★★★☆</div>
+        </div>
+      </div>
+      <p>Each one has its own unique charm and personality, and they've already started brightening up my space. The vibrant colors and fresh greenery make such a huge difference in my home.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-top">
+        <img src="https://i.pravatar.cc/38?img=15" class="rv-av"/>
+        <div>
+          <div class="rv-name">Carol Huels</div>
+          <div class="rv-stars">★★★★☆</div>
+        </div>
+      </div>
+      <p>It's like bringing a little piece of nature indoors. Definitely worth the investment — my plant collection has never looked better!</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ OUR BEST O2 ══════════ -->
+<section class="o2" id="o2">
+  <h2 class="sec-head"><span>Our Best o2</span></h2>
+  <div class="o2-wrap">
+    <div class="o2-img-col">
+      <img src="img/ChatGPT Image May 7, 2026, 01_43_55 PM.png" class="o2-photo" alt="O2 plant"/>
+    </div>
+    <div class="o2-text-col">
+      <h3>We Have Small And Best O2 Plants Collection's</h3>
+      <p>Oxygen-producing plants, often referred to as "O2 plants," are those that release oxygen into the atmosphere through the process of photosynthesis.</p>
+      <p>Many plants can help filter out pollutants and toxins from the air, such as formaldehyde, benzene, and trichloroethylene. This makes the air cleaner and healthier to breathe.</p>
+      <div class="o2-foot">
+        <button class="btn-explore">Explore</button>
+        <div class="o2-nav">
+          <button class="o2-arr" id="o2Prev">‹</button>
+          <span class="o2-pg" id="o2Pg">01/04</span>
+          <button class="o2-arr" id="o2Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer id="footer">
+  <div class="foot-wrap">
+
+    <div class="foot-brand">
+      <div class="foot-logo">
+        <img src="img/ChatGPT Image May 9, 2026, 02_51_06 AM.png" height="30px" width="30px" >
+        FloraVision.
+      </div>
+      <p>"From lush indoor greens to vibrant outdoor blooms, our plants are crafted to thrive and elevate your living environment."</p>
+      <div class="foot-soc">
+        <a href="#">FB</a>
+        <a href="#">TW</a>
+        <a href="#">LI</a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4>Quick Link's</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Types Of plant's</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h4>For Every Update.</h4>
+      <div class="foot-news">
+        <input id="newsInput" type="email" placeholder="Enter Email"/>
+        <button id="subBtn">SUBSCRIBE</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="foot-bottom">
+    <span>FloraVision © all right reserve</span>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
