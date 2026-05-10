@@ -56,7 +56,6 @@ Click Open with Live Server
 Option C — Terminal:
 bash# Mac
 open index.html
-
 # Windows
 start index.html
 
