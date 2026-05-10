@@ -35,6 +35,32 @@ Floral-Vision/
 
 ## Setup and Run Instructions
 
+Step 1 — Clone the Repository
+bashgit clone https://github.com/sohamsudrik/floravision.git
+
+Step 2 — Open the Project Folder
+bashcd floraVision
+
+Step 3 — Run the Project
+No installation or build step needed!
+Just open index.html directly in your browser:
+
+Option A — Double click:
+Double click index.html → opens in browser
+
+Option B — VS Code Live Server:
+
+Open folder in VS Code
+Right click index.html
+Click Open with Live Server
+
+Option C — Terminal:
+bash# Mac
+open index.html
+
+ Windows
+start index.html
+
 ## Live Deployment
 
 Vercel Link (Deployment) :
