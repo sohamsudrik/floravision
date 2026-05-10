@@ -46,8 +46,6 @@ Vercel Link (Deployment) :
 https://floravision-delta.vercel.app/
 
 
-# Add your deployed Vercel/Render link here.
-
 ## Future Improvements
 - Add dark mode support
 - Improve animations and interactions
