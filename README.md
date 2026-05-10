@@ -35,10 +35,6 @@ Floral-Vision/
 
 ## Setup and Run Instructions
 
-# Clone the Repository
-
-
-
 ## Live Deployment
 
 Vercel Link (Deployment) :
